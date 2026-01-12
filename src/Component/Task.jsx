@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useDraggable } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
 import { TaskContext } from "../context/TaskContext.jsx";
-import { deleteTask, fetchBoards } from "../api/taskApi.js";
+import { deleteTask, fetchBoards } from "../api/TaskApis.jsx";
 import Modal from "./Modal.jsx";
 
 const Task = ({ task, isOverlay = false }) => {

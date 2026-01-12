@@ -6,7 +6,7 @@ import Task from "../Component/Task.jsx";
 import Button from "../Component/Button.jsx";
 import Modal from "../Component/Modal.jsx";
 
-import { updateTaskBoard, createBoard, fetchBoards } from "../api/taskApi.js";
+import { updateTaskBoard, createBoard, fetchBoards } from "../api/TaskApis.jsx";
 
 const Home = () => {
   const { boards, updateBoardTasks } = useContext(TaskContext);

@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import Task from "./Task";
 import Modal from "./Modal";
 import { useDroppable } from "@dnd-kit/core";
-import { createTask, fetchBoards, deleteBoard } from "../api/taskApi";
+import { createTask, fetchBoards, deleteBoard } from "../api/TaskApis.jsx";
 import { TaskContext } from "../context/TaskContext";
 
 const Board = ({ board, isTaskCreatable }) => {
