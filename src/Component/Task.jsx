@@ -48,7 +48,7 @@ const Task = ({ task, isOverlay = false }) => {
         className={`bg-white p-3.5 rounded-lg border border-gray-100 shadow-sm cursor-grab active:cursor-grabbing touch-none relative group transition-all duration-200
         ${
           isOverlay
-            ? "opacity-100 shadow-2xl z-[9999] scale-105 rotate-1 border-blue-200"
+            ? "opacity-100 shadow-2xl z-30 scale-105 rotate-1 border-blue-200"
             : isDragging
             ? "opacity-40 shadow-none"
             : "z-20 hover:shadow-md hover:-translate-y-0.5"

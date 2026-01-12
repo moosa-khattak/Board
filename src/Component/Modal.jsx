@@ -22,19 +22,19 @@ const Modal = ({
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-300 ${
+      className={`fixed inset-0 z-[9999] flex items-center justify-center p-4 transition-opacity duration-300 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity"
+        className="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity z-40"
         onClick={onClose}
       />
 
       {/* Modal Content */}
       <div
-        className={`glass-modal w-full max-w-md rounded-2xl p-6 relative z-10 transform transition-all duration-300 ${
+        className={`glass-modal w-full max-w-md rounded-2xl p-6 relative z-[9999] transform transition-all duration-300 ${
           isOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-4"
         }`}
       >
